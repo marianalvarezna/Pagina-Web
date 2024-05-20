@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color_text-primary:#784212;
+    --color_text-secundary:#101E2C;
+    --color_text-tertiary:#784212;
+    --main_color_primary: #784212;
+    --main_color_secundary: #ebab73;
+    --main_color_tertiary: #F5CBA7;
+    --background-color: #fafbfe;
+    --lowText_fron_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+}
+
+.container_header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu nav{
+    margin: 0px 20px;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    margin: 20px 16px;
+}
+
+.menu nav ul li a{
+    color: var(--color_text-secundary);
+    font-size: var(--lowText_fron_size);
+    position: relative;
+}
+
+.menu nav ul li a:hover{
+    color: var(--color_text-primary);
+}
+
+.btn_quote{
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid var(--color_text-primary);
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color_text-tertiary);
+    margin: 0px 20px;
+    transition: all 300ms;
+}
+
+.btn_quote:hover{
+    color:white;
+    background: var(--color_text-primary);
+}
+
+.menu .socialMedia{
+    margin: 0px 10px;
+}
+
+.menu .socialMedia a{
+    margin: 0px 4px;
+}
+
+.menu .socialMedia img{
+    width: 20px;
+}
+
+/*portada inicio*/
+.container_cover{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color_secundary);
+}
+
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display : flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover{
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text_cover h1{
+    font-size: 50px;
+    color: var(--color_text-secundary);
+}
+
+.text_cover p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.btn_text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main_color_primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn_text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color_primary);
+    color: var(--color_text-tertiary);
+}
+
+.image_cover{
+    width: 100%;
+}
+
+.image_cover img{
+    width: 550px;
+} 
+
+/*Estilos generales cards*/
+.container_card-primary{
+    padding-top: 100px;
+}
+
+.card_primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_card-primary p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_card-primary h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_card-primary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box_card-primary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_card-primary h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_card-primary p{
+    margin-top: 20px;
+}
+
+.box_card-primary img{
+    width: 100%;
+}
+
+/*cafetera*/
+.container_caf{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color_tertiary);
+}
+
+.cafetera{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display : flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cafetera{
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text_cafetera h1{
+    font-size: 50px;
+    color: var(--color_text-secundary);
+}
+
+.text_cafetera p{
+    font-size: var(--text_paragraph);
+    margin-top: 40px;
+    color: var(--color_text-tertiary);
+}
+
+.btn_text-cafetera{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main_color_primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn_text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color_primary);
+    color: var(--color_text-tertiary);
+}
+
+.image_cafetera{
+    width: 350px;
+    height: 350px;
+    margin: 0 5px;
+    border-radius: 25px;
+    display: flex;
+    margin-right: 280px;
+}
+
+/*servicios*/
+.container_servicios{
+    padding-top: 100px;
+}
+
+.servicios{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_servicios{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_servicios p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_servicios h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_servicios{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box_servicios:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_servicios h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_servicios p{
+    margin-top: 20px;
+}
+
+.box_servicios img{
+    width: 100%;
+}
+
+.box_servicios i{
+    margin-top: 40px;
+}
+
+/*Proyectos*/
+.container_proyecto{
+    background: var(--main_color_tertiary);
+    padding-top: 100px;
+}
+
+.proyecto{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_proyecto{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_proyecto p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_proyecto h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-proyecto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container_box-proyecto1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_proyecto{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://st3.depositphotos.com/8108566/12542/v/450/depositphotos_125423270-stock-illustration-hand-with-franchise-business-concept.jpg);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.box_proyecto2{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JoZkgKgqrgV66qjPwnywla5Hi5VamvpvAA&usqp=CAU);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto2:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto2 h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto2 p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.box_proyecto3{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://us.123rf.com/450wm/fadfebrian/fadfebrian2311/fadfebrian231100038/218473252-male-barista-making-coffee-a-cup-of-coffee-with-coffee-beans-barista-in-a-coffee-cup-vector.jpg?ver=6);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto3:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto3 h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto3 p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+/*Equipo*/
+.container_equipo{
+    background: var(--background-color);
+    padding-top: 100px;
+}
+
+.equipo{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_equipo{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_equipo p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_equipo h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_equipo{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: transform 0.5s ease;
+    background-image: url(https://img.freepik.com/vector-gratis/mujer-morena-personaje-dibujos_23-2147502479.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.box_equipo:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_equipo p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo:hover p{
+    opacity: 1;
+}
+
+.box_equipo1{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: transform 0.5s ease;
+    background-image: url(https://c8.alamy.com/compes/m93175/guapo-builder-en-uniforme-personaje-de-dibujos-animados-professional-trabajador-de-la-construccion-reparador-sonriente-con-una-taza-de-cafe-ilustracion-vectorial-sobre-blanco-m93175.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.box_equipo1:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_equipo1 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo1:hover p{
+    opacity: 1;
+}
+
+.box_equipo2{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://previews.123rf.com/images/jemastock/jemastock1803/jemastock180305881/97481713-ilustraci%C3%B3n-de-una-caricatura-de-hombre-joven-en-una-camisa-azul.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.box_equipo2:hover{
+    background-image: none;
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_equipo2 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo2:hover p{
+    opacity: 1;
+}
+
+
+
+
+
+
+
